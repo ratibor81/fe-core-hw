@@ -1,0 +1,41 @@
+body {
+        background-image: url("../img/wall1.jpg") ;
+        background-repeat: no-repeat;  
+        background-size: 100%;
+}
+img{
+        width: 100%;
+}
+
+
+h3   {
+        font-size: 18px;
+        color: gray;
+        text-transform: uppercase;
+        
+}
+
+.wrapper{
+        background: rgb(238, 238, 238);
+        margin: 230px auto;
+        width: 480px;
+        height: 1000px;
+        font-family: tahoma;
+        padding: 40px;
+        color: gray;
+   
+}
+
+p {
+    font-size: 12px;
+}
+
+hr{
+        margin-top: 20px;
+}
+.blok div{
+        display: inline-block;
+        vertical-align:top;
+        width: 180px;
+        margin-left: 50px;
+}
