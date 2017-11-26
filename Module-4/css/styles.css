@@ -1,0 +1,157 @@
+body {
+        background-image: url("../img/wall1.jpg") ;
+        background-repeat: no-repeat;  
+        background-size: 100%;
+}
+
+img {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
+}
+h3   {
+        font-size: 32px;
+        color: rgba(20, 6, 61, 0.815);
+        text-transform: uppercase;
+        font-family: 'Pathway Gothic One', Arial, sans-serif;
+       
+}
+h4{
+        margin: 0px;
+        line-height: 35px;
+        color:rgba(42, 60, 143, 0.678);
+}
+
+
+.wrapper{
+        background: white;
+        margin: 230px auto;
+        font-family: 'Arial',sans-serif;
+        width: 1024px;
+        height: 1300px;
+        padding: 60px;
+        color: rgb(0, 0, 0);
+       
+   
+}
+
+p {
+        font-size: 17px;
+        line-height: 1.3;
+}
+
+b{
+        color:rgba(42, 60, 143, 0.678);
+}
+
+hr{
+        margin-top: 60px;
+        margin-bottom: 60px;
+}
+
+.clearfix::after{
+        content: "";
+        display: block;
+        clear: both;
+}
+.left{
+        float: left;
+        width: 70%;
+        margin-top: 54px;
+        padding-right: 15px;
+
+}
+.right{ 
+        float: right;
+        width: 25%;
+        margin-top: 54px;
+
+
+} 
+li{
+        list-style-type: none;
+        color: rgba(20, 6, 61, 0.815);
+        font-size: 17px;
+        line-height: 50px;
+}
+
+ul{
+        padding-left: 0px;
+}
+.list li::before{
+        content: " → ";
+        color: blue;
+        margin-right: 10px;
+}
+.list1{
+        float: left;
+        margin-right: 40px;
+        
+}
+.list2{
+        float: left;
+}
+
+.list li{
+        font-weight: bold;
+}
+
+.list-item p{
+        color: black;
+        margin: 0px;
+}
+.list-item :last-child{
+        margin-bottom: 0px;
+
+}
+.list-item{
+        margin-bottom: 20px;
+}
+.list-item::before{
+        display: block;
+        float: left;
+        counter-increment: list-right;
+        content: counter(list-right);
+        padding: 5px 10px;
+        border-radius: 50%;
+        background-color: rgb(0, 153, 255);
+        color: white;
+        line-height: 23px;
+}
+
+.list-right{
+        counter-reset: list-right;
+        margin: 0px;
+        float: right;
+
+}
+.article{
+        float: left;
+        width: calc(100% - 50px);
+}
+.right-bottom{
+        float: left;
+}
+.text-bottom{
+        color:rgba(42, 60, 143, 0.678);
+        font-weight: bold;
+        line-height: 1.3;
+        border: 1px solid lightgrey;
+        padding: 25px;
+        background-color: #fcfafa;
+}       
+.text-bottom::before{
+        content: open-quote;  
+}
+.text-bottom::after{
+        content: close-quote;
+}
+.dir #name{
+        color:rgba(42, 60, 143, 0.678);
+        font-weight: bold;
+}
+.dir{
+        float: left;
+        margin-top: 40px;
+        text-align: center;
+}
