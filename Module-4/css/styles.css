@@ -14,6 +14,7 @@ h3   {
         color: rgba(20, 6, 61, 0.815);
         text-transform: uppercase;
         font-family: 'Pathway Gothic One', Arial, sans-serif;
+        
        
 }
 h4{
@@ -28,7 +29,7 @@ h4{
         margin: 230px auto;
         font-family: 'Arial',sans-serif;
         width: 1024px;
-        height: 1300px;
+        height: 1350px;
         padding: 60px;
         color: rgb(0, 0, 0);
        
@@ -58,7 +59,7 @@ hr{
         float: left;
         width: 70%;
         margin-top: 54px;
-        padding-right: 15px;
+        /*padding-right: 15px;*/
 
 }
 .right{ 
@@ -131,6 +132,7 @@ ul{
 }
 .right-bottom{
         float: left;
+        
 }
 .text-bottom{
         color:rgba(42, 60, 143, 0.678);
@@ -154,4 +156,7 @@ ul{
         float: left;
         margin-top: 40px;
         text-align: center;
+}
+.right-bottom h3{
+        margin-top: 65px;
 }
