@@ -1,0 +1,44 @@
+header{
+    background-color: black;
+    height: 145px;
+    
+}
+a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.959);
+}
+
+li{
+    color: grey;
+    list-style: none;
+    float: left;
+    margin-right: 25px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+#logo{
+    margin-left: 375px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-right: 215px; 
+    float: left;
+}
+#icon-search{
+    float: right;
+    margin-right: 370px;
+    margin-top: 55px;
+}
+#icon-cart{
+    float: right;
+    margin-right: 28px;
+    margin-top: 55px;
+}
+body{
+    margin: 0px;
+}
+.menu{
+    margin: 45px;
+    float: left;
+}
