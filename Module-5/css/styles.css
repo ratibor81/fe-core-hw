@@ -1,0 +1,333 @@
+body {
+        background-image: url("../img/wall.jpg") ;
+        background-repeat: no-repeat;  
+        background-size: 100%;
+}
+
+img{
+        width: 100%;
+}
+
+.navi   {
+        color: white;
+        font-family: 'Pathway Gothic One', arial , sans-serif;
+        
+       
+}
+
+.wrapper{
+        background: white;
+        margin: auto;
+        font-family: 'Arial',sans-serif;
+        width: 964px;
+        height: 1170px;
+        padding: 60px;
+        color: rgb(0, 0, 0);
+       
+   
+}
+
+.menu, .menu-right {
+        width: 400px;
+        height: 60px;
+        box-sizing: border-box;
+        list-style: none;
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-top: 90px;
+               
+}
+      
+.menu__item {
+        display: inline-block;
+        position: relative;
+        margin-left: 10px;
+        margin-right: 10px;
+}
+      
+.menu__item > a,
+.submenu__item > a {
+        display: block;
+        height: 30px;
+        text-decoration: none;
+        line-height: 20px;
+        color: var(--accent-color);
+}
+.submenu__item>a { width: 35px;
+        color:rgb(56, 56, 109);
+} 
+.menu__item>a { width: 90px; }
+      
+.menu__item>a:hover {
+        color: rgb(56, 56, 109);
+}
+.submenu__item>a:hover {
+        color: rgb(250, 33, 33);
+}
+      
+.submenu {
+        display: none;
+        position: absolute;
+        left: -13px;
+        top: 30px;
+        width: 50px;
+        list-style: none;
+        background: white;
+        font-family: 'Pathway Gothic One', arial , sans-serif;
+        font-size: 20px;
+        text-align: center;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-right: 15px;
+        
+        
+}
+      
+.menu__item:hover>.submenu {
+        display: block;
+      
+}
+
+.submenu__item {
+        display: inline-block;
+        margin-top: 5px;
+               
+                
+}
+      
+.navi {
+        width: 1024px;;
+        height: 235px;
+        margin: auto;
+} 
+      
+      .sub-sign { position: relative; }
+.menu{
+        float: left;
+}
+.menu-right{
+        float: right;
+}
+.logo{
+        display: block;
+        float: left;
+        font-size: 60px;
+        font-family: 'Dorsa', arial , sans-serif;
+        text-transform: uppercase;
+        color: rgb(56, 56, 109);
+        background-color: white;
+        width: 140px;
+        height: 140px;
+        border-radius: 70px;
+        text-align: center;
+        line-height: 140px;
+        margin-left: 50px;
+        margin-top: 40px;
+        
+
+}
+.triangle-top::before {
+        content: "";
+        display:block; 
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 10px 10px 10px;
+        border-color: transparent transparent white transparent;
+        position: absolute;
+        left: 30px;
+        top: -8px;
+        
+    }
+
+.text1{
+       
+        background-color: white;
+        position: absolute;
+        left: 308px;
+        top: 540px;
+        width: 225px;
+        height: 60px;
+        border-left-style: solid;
+        border-left-color: rgb(218, 205, 205);
+        border-left-width: 1px;
+        
+}
+
+.text12{
+        display: inline-block;
+        font-family: 'Pathway Gothic One', arial , sans-serif;
+        font-size: 23px;
+        position: absolute;
+        left: 319px;
+        top: 555px;
+        color: rgb(56, 56, 109);
+}
+
+.text2{
+        text-transform: uppercase;
+        font-size: 35px;
+        font-family: 'Pathway Gothic One', arial , sans-serif;
+        color: white;
+        position: absolute;
+        left: 320px;
+        top: 610px;
+        
+}
+.arrow-left{
+        width: 45px;
+        height: 90px;
+        border-radius: 100% 0 0 100% / 50% 0 0 50%;
+        background: #38afe5;
+        position: absolute;
+        left: 350px;
+        top: 780px;
+        
+}
+.arrow-right{
+        width: 45px;
+        height: 90px;
+        border-radius: 0 100% 100% 0 / 0 50% 50% 0;
+        background: #38afe5;
+        position: absolute;
+        left: 395px;
+        top: 780px;
+              
+}
+
+.arrow-left:hover{
+        background: #b2e0f1;
+}
+.arrow-right:hover{
+        background: #b2e0f1;
+}
+.img1{
+        position: absolute;
+        left: 375px;
+        top: 815px;
+        width: 15px;
+        height: 15px;
+}
+.img2{
+        position: absolute;
+        left: 405px;
+        top: 815px;
+        width: 15px;
+        height: 15px;
+}
+.text{
+        width: 170px;
+        height: 45px;
+        font-size: 30px;
+        font-family: 'Pathway Gothic One', arial , sans-serif;
+        color: rgb(56, 56, 109);
+        text-transform: uppercase;
+        margin-top: 45px;
+        margin-bottom: 45px;
+
+}
+.dest1{
+        background-image: url("../img/venice.jpg");
+        background-repeat: no-repeat;  
+        background-size: 100%;
+        width: 288px;
+        height: 270px;
+        float: left;
+        margin-right: 50px;
+              
+}
+.dest2{
+        background-image: url("../img/york.jpg");
+        background-repeat: no-repeat;  
+        background-size: 100%;
+        width: 288px;
+        height: 270px;
+        float: left;
+        margin-right: 50px;
+}
+.dest3{
+        background-image: url("../img/paris.jpg");
+        background-repeat: no-repeat;  
+        background-size: 100%;
+        width: 288px;
+        height: 270px;
+        float: left;
+        margin-right: 0px;
+}
+span{
+        font-size: 30px;
+        text-transform: uppercase;
+        font-family: 'Pathway Gothic One', arial , sans-serif;
+        
+        
+}
+.text-venice{
+        display: block;
+        width: 144px;
+        height: 270px;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        background-color: #193149;
+        color: rgba(255, 255, 255, 0.87);
+        line-height: 20px;
+        text-align: center;
+        display: none;
+        
+        
+}
+.dest1:hover>.text-venice{
+        display: block;
+}
+.dest2:hover>.text-venice{
+        display: block;
+}
+.dest3:hover>.text-venice{
+        display: block;
+}
+.details{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        width: 60px;
+        height: 20px;
+        color: black;
+        background-color: rgb(252, 244, 244);
+        border-radius: 2px;
+        position: relative;
+        right: -75px;
+        bottom: -15px;
+}
+.details:hover{
+        background-color: rgb(105, 253, 191);
+}
+.to-top-button{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        position: fixed;
+        right: 270px;
+        bottom: 50px;
+        background-color: #38afe5;
+
+}
+.top-button-img{
+        width: 15px;
+        height: 10px;
+        position: relative;
+        left: 7px;
+        top: 5px;
+}
+.to-top-button:hover{
+        background: rgba(146, 187, 80, 0.829);
+}
+p{
+        padding: 15px;
+        text-align: center;
+}
+span{
+        position: relative;
+        left: 0px;
+        top: 20px;
+}
