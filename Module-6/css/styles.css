@@ -277,12 +277,12 @@ ul{
         border-color: lightgray transparent transparent transparent;
         position: absolute;
         left: 939px;
-        top: 1023px;
+        top: 1020px;
         
 }       
 .triangle::after{
         border-color: #fcfafa transparent transparent transparent;
-        top: 1019px;
+        top: 1018px;
 
 }
 .text-bottom::before{
