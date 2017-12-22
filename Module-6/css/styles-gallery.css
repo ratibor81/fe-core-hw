@@ -4,10 +4,12 @@ body {
         background-size: cover;
 }
 
-.menu, .menu-right {
+.menu {
         height: 60px;
         box-sizing: border-box;
         list-style: none;
+        display: flex;
+        flex-direction: row;
         text-transform: uppercase;
         margin-top: 90px;
                
@@ -100,8 +102,9 @@ body {
         border-radius: 70px;
         text-align: center;
         line-height: 140px;
-        margin-top: 25px;
-        margin-right: 20px;
+        margin-top: -60px;
+        margin-right: 40px;
+        margin-left: 30px;
 
 }
 .logo:hover{
@@ -133,7 +136,55 @@ li{
 ul{
         padding-left: 0px;
 }
+.wrapper{
+        background: white;
+        margin: auto;
+        font-family: 'Arial',sans-serif;
+        width: 1024px;
+        height: 850px;
+        padding: 60px;
+        color: rgb(0, 0, 0);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+.gallery-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 1050px;
+        height: 800px;
+        justify-content: center;
+        
+}
+.gallery-item{
+        width: 288px;
+        height: 154px;
+        margin-right: 30px;
+        opacity: 1;               
+}
+.gal{
+        font-size: 32px;
+        color: rgba(20, 6, 61, 0.815);
+        text-transform: uppercase;
+        font-family: 'Pathway Gothic One', Arial, sans-serif;
+        display: flex;
+        width: 200px;
+        height: 35px;
+        justify-content: flex-start;
+        margin-left: 50px;
+     
+}
 
+.gallery-item:hover{
+        opacity: 0.4;
+        cursor: pointer;
+        
+}
+.gallery-item:nth-child(3n+3){
+        margin-right: 0px;
+}
 
 .footer-menu{
         width: 1144px;
@@ -142,7 +193,7 @@ ul{
         margin: auto;
               
 }
-.footer-menu-1{
+.footer-menu-1, .footer-menu-2{
         width: 1144px;
         height: 50%;
         background-color: #30455b;
@@ -154,17 +205,17 @@ ul{
             
 }
 .footer-menu-2{
-        width: 1144px;
-        height: 50%;
-        background-color: #30455b;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
         align-items: flex-start;
               
 }
-
+.footer-menu-1 li:nth-child(4){
+        font-size: 18px;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        height: 25px;
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+}
 .footer-menu li a{
         font-size: 18px;
         font-family: 'Open Sans Condensed', sans-serif;
@@ -173,6 +224,12 @@ ul{
         color: rgb(226, 226, 226);
         text-decoration: none;
       
+}
+.footer-menu-2 li{
+        width: 100px;
+}
+.footer-menu-1 li{
+        width: 100px;
 }
 .tel{
         font-size: 12px;
@@ -183,21 +240,6 @@ ul{
 }
 .footer-menu li a:hover{
         color: blueviolet;
-}
-.footer-menu-2 li:nth-child(1){
-        margin-left: 3px;
-        margin-right: 22px;
-}
-.footer-menu-2 li:nth-child(2){
-        margin-right: 38px;
-        margin-left: -10px;
-}
-.footer-menu-2 li:nth-child(3){
-        margin-right: -5px;
-        margin-left: -30px;
-}
-.footer-menu-2 li:nth-child(4){
-        margin-right: -40px;
 }
 .social-links{
         width: 1144px;
@@ -276,54 +318,3 @@ ul{
 .to-top-button:hover{
         background: rgba(154, 231, 171, 0.829);
 }
-.gallery-container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 1050px;
-        height: 800px;
-        justify-content: center;
-        
-}
-.gallery-item{
-        width: 288px;
-        height: 154px;
-        margin-right: 30px;
-        opacity: 1;               
-}
-.gal{
-        font-size: 32px;
-        color: rgba(20, 6, 61, 0.815);
-        text-transform: uppercase;
-        font-family: 'Pathway Gothic One', Arial, sans-serif;
-        display: flex;
-        width: 200px;
-        height: 35px;
-        justify-content: flex-start;
-        margin-left: 50px;
-        
-      
-}
-.wrapper{
-        background: white;
-        margin: auto;
-        font-family: 'Arial',sans-serif;
-        width: 1024px;
-        height: 850px;
-        padding: 60px;
-        color: rgb(0, 0, 0);
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        
- 
-}
-.gallery-item:hover{
-        opacity: 0.5;
-        cursor: pointer;
-}
-.gallery-item:nth-child(3n+3){
-        margin-right: 0px;
-}
-
