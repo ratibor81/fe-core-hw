@@ -1,0 +1,206 @@
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+
+
+.menu {
+        margin-top: 3.75rem;
+         
+}
+.navi li{
+        font-size: 1.25rem;
+}
+      
+.menu__item {
+        display: inline-block;
+        position: relative;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        margin: 0 auto;
+        height: 1.875rem;
+}
+.submenu li{
+        font-size: 0.875rem;
+}
+.menu__item > a,
+.submenu__item > a {
+        display: block;
+        height: 1rem;
+        text-decoration: none;
+        color: var(--accent-color);
+        
+}
+.menu__item>a { width: 3.125rem; }
+    
+.submenu {
+        left: -0.3125rem;
+        top: 2rem;
+        width: 3.125rem;
+        background: white;
+        font-size: 0.875rem;
+        
+}
+.wrapper { padding: 2.5rem;}
+.logo{
+        display: inline-block;
+        font-size: 2.125rem;
+        font-family: 'Dorsa', arial , sans-serif;
+        text-transform: uppercase;
+        color: rgb(56, 56, 109);
+        background-color: white;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        text-align: center;
+        line-height: 5rem;
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+}
+img{
+        width: 100%;
+        height: auto;
+        
+}
+
+.triangle-top::before {
+        content: "";
+        display:block; 
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0.625rem 0.625rem 0.625rem;
+        border-color: transparent transparent white transparent;
+        position: absolute;
+        left: 1rem;
+        top: -0.5rem;
+        
+}
+.menu li, .menu-right li{
+        color: white;
+}
+li{
+        list-style-type: none;
+        color: rgba(20, 6, 61, 0.815);
+        font-size: 0.875rem;
+        
+}
+
+ul{
+        padding-left: 0rem;
+}
+
+.gallery-item{
+        width: 25rem;
+        height: auto;
+        margin-bottom: 2.5rem;
+        display: block;
+        opacity: 1;               
+}
+.col-12:nth-last-child(-n+3){
+        display: none;
+}
+
+.gal{
+        font-size: 1.75rem;
+        color: rgba(20, 6, 61, 0.815);
+        text-transform: uppercase;
+        font-family: 'Pathway Gothic One', Arial, sans-serif;
+        margin-bottom: 1.25rem;
+     
+}
+
+.gallery-item:hover{
+        opacity: 0.4;
+        cursor: pointer;    
+}
+.footer-menu{
+        width: 100%;
+        height: 8.25rem;
+        background-color: #30455b;
+        margin: 0rem;
+              
+}
+.footer-menu-1, .footer-menu-2{
+        width: 100%;
+        height: 25%;
+        background-color: #30455b;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-end;
+            
+}
+.footer-menu-2{
+        align-items: center;
+              
+}
+
+
+.footer-menu-1 li:nth-child(4){
+        font-size: 0.875rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        width: 5rem;
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+        position: absolute;
+        left: 3.75rem;
+        top: 124.0625rem;
+        
+
+}
+.footer-menu li a{
+        font-size: 0.875rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        height: 1.5625;
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+      
+}
+.footer-menu-2 li{
+        width: 5rem;
+}
+
+.footer-menu-2 li:nth-child(4){
+        width: 16.25rem;
+}
+.footer-menu-1 li{
+        width: 5rem;
+}
+
+.tel {
+        font-size: 0.625rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: none;
+        color: rgb(226, 226, 226);
+        text-align: left;
+        position: absolute;
+        display: inline-block;
+        left: 12.5rem;
+        top: 124.375rem;
+
+
+}
+#img-mail, #img-tel{
+        display: inline-block;
+        width: auto;
+        height: auto;
+        margin-right: 0.3125rem;
+       
+}
+#img-mail{
+        margin-left: 2.8125rem;
+}
+
+
+.footer-menu li a:hover{
+        color: blueviolet;
+}
+.copyright {font-size: 0.5625rem;}
+
+}

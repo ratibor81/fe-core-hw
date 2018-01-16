@@ -1,0 +1,152 @@
+@import url(mobile-about.css);
+@import url(tablet-about.css);
+@import url(desktop-about.css);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    background: white;
+    margin: auto;
+    font-family: 'Arial',sans-serif;
+    min-width: 480px;
+    max-width: 1024px;
+    height: auto;
+    padding: 1.25rem;
+    
+}
+h3   {
+    color: rgba(20, 6, 61, 0.815);
+    text-transform: uppercase;
+    font-family: 'Pathway Gothic One', Arial, sans-serif;
+}
+b{
+    color:#263555;
+}
+body {
+    background-image: url("../img/wall1.jpg") ;
+    background-repeat: no-repeat;  
+    background-size: cover;
+}
+.menu {
+    box-sizing: border-box;
+    list-style: none;
+    text-transform: uppercase;
+}
+.submenu__item>a { width: 2.8125rem;
+    color:rgb(56, 56, 109);
+    
+}
+.menu__item>a:hover {
+    color: rgb(56, 56, 109);
+}
+.submenu__item>a:hover {
+    color: rgb(250, 33, 33);
+}
+.submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    font-family: 'Pathway Gothic One', arial , sans-serif;
+    text-align: center;
+    border-radius: 0.3125rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.9375rem;
+    z-index: 10;
+}
+
+.menu__item:hover>.submenu {
+    display: block;
+}
+
+.submenu__item {
+    display: inline-block;
+}
+
+.sub-sign { position: relative; }
+
+.logo:hover{
+    box-shadow: 0 0 0.625rem rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.navi {
+    height: 15rem;
+    font-family: 'Pathway Gothic One', arial , sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social-links{
+    max-width: 64rem;
+    height: 6.25rem;
+    margin: auto;
+}
+.social-container{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.twitter, .facebook, .google, .instagram{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    background-image: url("../img/social_sprites.png");
+}
+
+.twitter {background-position: 51px 170px;}
+.facebook {background-position: 230px 230px;}
+.google {background-position: 51px 110px;}
+.instagram {background-position: 110px 170px;}
+
+.copyright{
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+}
+.to-top-button{
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 0.9375rem;
+    position: fixed;
+    right: 6.875rem;
+    bottom: 3.125rem;
+    background-color: #38afe5;
+    background-image: url("../img/top.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.top-button-img{
+    width: 0.9375rem;
+    height: 0.625rem;
+    position: relative;
+    left: 0.5rem;
+    top: 0.5625rem;
+}
+.to-top-button:hover{
+    background: rgba(154, 231, 171, 0.829);
+}
+
+.container{
+    margin-top: 2rem;
+}
+
+.center-row{
+        justify-content: center;
+}
+
+
+     
