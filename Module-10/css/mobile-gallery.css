@@ -1,0 +1,218 @@
+@media screen and (max-width: 768px) {
+
+
+.nav__list {
+        margin-top: 3.75rem;
+        padding-left: 10px;
+         
+}
+    
+.nav__item {
+        display: inline-block;
+        position: relative;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        margin: 0 auto;
+        height: 1.875rem;
+        font-size: 1.25rem;
+        color: white;
+}
+.nav__submenu-item{
+        font-size: 0.875rem;
+}
+.nav__link, .nav__submenu-link {
+        display: block;
+        height: 1rem;
+        text-decoration: none;
+        color: var(--accent-color);
+        
+}
+.nav__link { width: 3.125rem; }
+    
+.nav__submenu {
+        left: -0.3125rem;
+        top: 1.5625rem;
+        width: 3.125rem;
+        background: #ffffff;
+        font-size: 0.875rem;
+        
+}
+
+.logo{
+        display: inline-block;
+        font-size: 2.125rem;
+        font-family: 'Dorsa', arial , sans-serif;
+        text-transform: uppercase;
+        color: rgb(56, 56, 109);
+        background-color: white;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 2.5rem;
+        text-align: center;
+        line-height: 5rem;
+        position: absolute;
+        top: 1rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+
+}
+
+.nav__submenu-triangle::before {
+        content: "";
+        display:block; 
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0.625rem 0.625rem 0.625rem;
+        border-color: transparent transparent white transparent;
+        position: absolute;
+        left: 1rem;
+        top: -6px;
+        
+}
+
+ul{
+        padding-left: 0rem;
+}
+        /*Gallery styles*/
+
+.title{
+        font-size: 2rem;
+        color: rgba(20, 6, 61, 0.815);
+        text-transform: uppercase;
+        font-family: 'Pathway Gothic One', Arial, sans-serif;
+        margin-bottom: 1.25rem;
+        margin-top: 1.25rem;
+     
+}
+.gallery__img{
+        width: 100%;
+        height: auto;
+        
+}
+
+.gallery__item:nth-last-child(-n+3){
+        display: none;
+}
+
+.gallery__item {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.5rem;
+        padding: 0;
+}   
+
+        /*Footer menu styles*/
+
+.footer-menu{
+        width: 100%;
+        height: 8.25rem;
+        background-color: #30455b;
+        margin: 0rem;
+        position: relative;
+       
+              
+}
+.footer-menu__top, .footer-menu__bottom{
+        width: 100%;
+        height: 25%;
+        background-color: #30455b;
+        margin: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+            
+}
+.footer-menu__bottom{
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+              
+}
+
+
+.footer-menu__item-contacts {
+        font-size: 0.875rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        width: 5rem;
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+        position: absolute;
+        left: 3.6875rem;
+        bottom: 2rem;
+        list-style-type: none;
+
+        
+
+}
+.footer-menu__link{
+        font-size: 0.875rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        height: 1.5625;
+        color: rgb(226, 226, 226);
+        text-decoration: none;
+      
+}
+.footer-menu__item {
+        width: 5rem;
+        list-style-type: none;
+        color: rgba(20, 6, 61, 0.815);
+        font-size: 0.875rem;
+}
+
+.footer-menu__tel-email{
+        width: 16.25rem;
+}
+
+
+.footer-menu__tel-email {
+        font-size: 0.625rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: none;
+        color: rgb(226, 226, 226);
+        position: absolute;
+        display: inline-block;
+        left: 12.3rem;
+        bottom: 2rem;
+
+}
+
+
+.footer-menu__img-mail, .footer-menu__img-tel{
+        position: relative;
+        top: 0.25rem;
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.3125rem;
+        
+       
+}
+
+.footer-menu__img-mail{
+        margin-left: 2.4375rem;
+}
+
+
+.footer-menu__link:hover{
+        color: blueviolet;
+}
+.copyright-text {font-size: 0.5625rem;}
+
+
+}

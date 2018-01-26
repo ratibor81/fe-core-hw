@@ -1,0 +1,225 @@
+@import url(mobile-gallery.css);
+@import url(tablet-gallery.css);
+@import url(desktop-gallery.css);
+
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("../img/wallpaper.jpg") no-repeat ;
+    background-size: cover;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+    body {
+      background: url("../img/wallpaper-retina.jpg") no-repeat;
+      background-size: cover;
+    }
+}
+.nav, .footer-menu, .socials{
+    min-width: 480px;
+
+}
+.nav {
+    position: relative;
+    margin: auto;
+    height: 15rem;
+    max-width: 64rem;
+    font-family: 'Pathway Gothic One', arial , sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+
+
+}
+
+.nav__list {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    list-style: none;
+    text-transform: uppercase;
+    
+}
+
+.nav__submenu-link { width: 2.8125rem;
+    color:rgb(56, 56, 109);
+    
+}
+.nav__link:hover {
+    color: rgb(56, 56, 109);
+}
+.nav__submenu-link:hover {
+    color: rgb(250, 33, 33);
+}
+.nav__submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    font-family: 'Pathway Gothic One', arial , sans-serif;
+    text-align: center;
+    border-radius: 0.3125rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.9375rem;
+    z-index: 10;
+}
+
+.nav__item:hover>.nav__submenu {
+    display: block;
+}
+
+.nav__submenu-item {
+    display: inline-block;
+}
+
+.logo:hover{
+    -webkit-box-shadow: 0 0 0.625rem rgba(0,0,0,0.5);
+            box-shadow: 0 0 0.625rem rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+
+.wrapper{
+    position: relative;
+    background: white;
+    margin: auto;
+    font-family: 'Arial',sans-serif;
+    min-width: 480px;
+    max-width: 64rem;
+    height: auto;
+    padding: 2.5rem;
+    color: rgb(0, 0, 0);
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+
+
+    /*Ховер эффект для элемента галереи*/
+
+.gallery__item:before {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 28px;
+    top: 40%;
+    left: 50%;
+    margin: -14px 0 0 -10px;
+    background: url("../img/zoom-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+   }
+   .gallery__item:hover:before {
+    top: 50%;
+    opacity: 1;
+   }
+   .gallery__item:after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 98%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+   }
+   .gallery__item:hover:after {
+    opacity: 1;
+   }
+   .gallery__item{
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-menu__top, .footer-menu__bottom {
+    list-style-type: none;
+}
+
+.socials {
+    max-width: 64rem;
+    height: 6.25rem;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.socials__icon {
+    width: 2.5rem;
+    height: 2.75rem;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    fill: #fff;
+       
+}
+
+.socials__icon:hover {
+    fill: #333;
+    
+}
+
+.copyright-text {
+    max-width: 64rem;
+    height: 2rem;
+    margin: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+}
+
+.to-top-button{
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 0.9375rem;
+    position: fixed;
+    right: 6.875rem;
+    bottom: 3.125rem;
+    background-color: #38afe5;
+    background-image: url("../img/top.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.top-button-img{
+    width: 0.9375rem;
+    height: 0.625rem;
+    position: relative;
+    left: 0.5rem;
+    top: 0.5625rem;
+}
+.to-top-button:hover{
+    background: rgba(154, 231, 171, 0.829);
+}
+
+     
