@@ -1,0 +1,503 @@
+$min-width: 30rem;
+$max-width: 64rem;
+$color: #fff;
+
+@mixin main-text{
+    font: {
+        family: 'Pathway Gothic One', arial , sans-serif;
+    }
+        color: $color;
+}
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url("../img/wallpaper.jpg") no-repeat ;
+    background-size: cover;
+    @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi) {
+        background: url("../img/wallpaper-retina.jpg") no-repeat;
+    }
+}
+
+.nav, .footer-menu, .socials, .copyright-text, .wrapper{
+    min-width: $min-width;
+    max-width: $max-width;
+}
+.wrapper{
+    position: relative;
+    background: $color;
+    margin: auto;
+    font-family: 'Arial',sans-serif;
+    height: auto;
+    padding: 2.5rem;
+    color: rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+// Хедер и меню
+
+.nav{
+    position: relative;
+    margin: auto;
+    height: 15rem;
+    @include main-text;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 1024px){
+        justify-content: space-around;
+    }
+    &__list{
+        list-style: none;
+        text-transform: uppercase;
+        @media screen and (max-width: 768px){
+            margin-top: 3.75rem;
+            padding-left: 10px; 
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            margin-top: 7.8125rem;
+            width: auto;
+            padding-left: 35px;
+        }
+        @media screen and (min-width: 1024px){
+            display: flex;
+            flex-direction: row;
+            margin-top: 5.625rem;
+        }
+    } 
+    &__link{
+        display: block;
+        height: 1rem;
+        text-decoration: none;
+        color: $color;
+        width: 3.125rem; 
+        &:hover{
+            color: rgb(56, 56, 109); 
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            width: 5rem;
+        }
+        @media screen and (min-width: 1024px){
+            height: 1.5625rem;
+            width: 5.625rem;
+            line-height: 0.9375rem;
+        }
+
+    }
+    
+
+    &__item{
+        display: inline-block;
+        position: relative;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        margin: 0 auto;
+        height: 1.875rem;
+        font-size: 1.25rem;
+        color: $color; 
+        &:hover>.nav__submenu {
+            display: block;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            height: 3.125rem;
+            font-size: 1.5rem;
+        }
+        @media screen and (min-width: 1024px){
+            font-size: 1.75rem;
+        }
+    }
+ }
+
+
+.nav__submenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    @include main-text;
+    text-align: center;
+    border-radius: 0.3125rem;
+    padding-left: 0.3125rem;
+    padding-right: 0.9375rem;
+    z-index: 10;
+    left: -0.3125rem;
+    top: 1.5625rem;
+    width: 3.125rem;
+    background: $color;
+    font-size: 0.875rem;
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        top: 2.1875rem;
+    }
+    @media screen and (min-width: 1024px){
+        left: -0.8125rem;
+        top: 1.875rem;
+        width: 4.375rem;
+        font-size: 1.25rem;
+    }
+    &-link { width: 2.8125rem;
+        color:rgb(56, 56, 109);
+        display: block;
+        height: 1rem;
+        text-decoration: none;
+        &:hover{
+            color: rgb(250, 33, 33);  
+        }
+        @media screen and (min-width: 1024px){
+            height: 1.5625rem;
+            width: 3.4375rem;
+            line-height: 0.9375rem;
+            font-size: 1.25rem;
+        }
+        
+    }
+    &-item{
+        display: inline-block;
+        font-size: 0.875rem;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            font-size: 1.0625rem;
+        }
+        
+    }
+    &-triangle::before {
+        content: "";
+        display:block; 
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0.625rem 0.625rem 0.625rem;
+        border-color: transparent transparent $color transparent;
+        position: absolute;
+        left: 1rem;
+        top: -0.375rem;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            top: -0.5rem;
+        }
+        @media screen and (min-width: 1024px){
+            left: 1.75rem;
+            top: -0.5rem;
+            
+        }
+
+}
+}
+
+.logo{
+    display: inline-block;
+    font-size: 2.125rem;
+    font-family: 'Dorsa', arial , sans-serif;
+    text-transform: uppercase;
+    color: rgb(56, 56, 109);
+    background-color: $color;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    line-height: 5rem;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    &:hover{
+        box-shadow: 0 0 0.625rem rgba(0,0,0,0.5);
+        cursor: pointer;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1023px){
+        font-size: 2.75rem;
+        width: 6.25rem;
+        height: 6.25rem;
+        border-radius: 3.125rem;
+        line-height: 6.25rem;
+    }
+    @media screen and (min-width: 1024px){
+        position: static;
+        display: block;
+        font-size: 3.75rem;
+        width: 8.75rem;
+        height: 8.75rem;
+        border-radius: 4.375rem;
+        line-height: 8.75rem;
+        margin-top: -3.75rem;
+        margin-right: 2.5rem;
+        margin-left: 1.875rem;
+
+    }
+}
+
+// Cоцсети
+
+.socials {
+    max-width: $max-width;
+    height: 6.25rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__icon{
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-left: 0.625rem;
+        margin-right: 0.625rem;
+        fill: $color;
+        &:hover{
+            fill: #333;
+        }
+    }
+}
+
+// Копирайт текст
+
+.copyright-text {
+    max-width: $max-width;
+    height: 2rem;
+    margin: auto;
+    color: $color;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-align: center;
+    font-size: 0.5625rem;
+    @media screen and (min-width: 768px) {
+        font-size: 0.75rem;
+    }
+    
+}
+
+// Кнопка перехода ВВЕРХ
+
+.to-top-button{
+    width: 1.875rem;
+    height: 1.875rem;
+    border-radius: 0.9375rem;
+    position: fixed;
+    right: 6.875rem;
+    bottom: 3.125rem;
+    background-color: #38afe5;
+    background-image: url("../img/top.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    &-img{
+        width: 0.9375rem;
+        height: 0.625rem;
+        position: relative;
+        left: 0.5rem;
+        top: 0.5625rem;
+    }
+    &:hover{
+        background: rgba(154, 231, 171, 0.829);  
+    }
+
+}
+
+// Футер и футер-меню
+
+.footer-menu__top, .footer-menu__bottom {
+    list-style-type: none;
+}
+.footer-menu{
+    max-width: $max-width;
+    height: 8.25rem;
+    background-color: #30455b;
+    margin: auto;
+    position: relative;
+    &__top, &__bottom{
+        width: 100%;
+        height: 25%;
+        background-color: #30455b;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        @media screen and (min-width: 768px) {
+            height: 50%;
+        }
+    }
+    &__bottom{
+        align-items: center;
+        @media screen and (min-width: 768px) {
+            align-items: flex-start;
+        }
+    }
+    &__item-contacts {
+        font-size: 0.875rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        width: 5rem;
+        color: $color;
+        text-decoration: none;
+        position: absolute;
+        left: 3.6875rem;
+        bottom: 2rem;
+        list-style-type: none;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            font-size: 1rem;
+            position: static;
+        }
+        @media screen and (min-width: 1024px){
+            font-size: 1.125rem;
+            height: 1.5625rem;
+            position: static;
+        }
+    }
+    &__link{
+        font-size: 0.875rem;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        height: 1.5625rem;
+        color: $color;
+        text-decoration: none;
+        &:hover{
+            color: blueviolet;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            font-size: 1rem;
+        }
+        @media screen and (min-width: 1024px){
+            font-size: 1.125rem;
+        }
+    }
+    &__item {
+        width: 5rem;
+        list-style-type: none;
+        color: rgba(20, 6, 61, 0.815);
+        font-size: 0.875rem;
+        @media screen and (min-width: 1024px){
+            width: 6.25rem;
+        }
+    }
+    &__tel-email{
+        width: 16.25rem;
+        font-size: 0.625rem;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: none;
+        color: $color;
+        position: absolute;
+        display: inline-block;
+        left: 12.3rem;
+        bottom: 2rem;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            height: 1.1875rem;
+            width: 5rem;
+            text-align: left;
+            position: static;
+        }
+        @media screen and (min-width: 1024px){
+            font-size: 0.60rem;
+            width: 5rem;
+            position: static;
+            
+            
+        }
+    }
+    &__img-mail, &__img-tel{
+        position: relative;
+        top: 0.25rem;
+        display: inline-block;
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-right: 0.3125rem;
+        @media screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+    &__img-mail{
+        margin-left: 2.4375rem;
+    }
+
+}
+
+// Галерея
+
+.title{
+    font-size: 2rem;
+    text-transform: uppercase;
+    @include main-text;
+    color: rgba(20, 6, 61, 0.815);
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+ 
+}
+.gallery{
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 2.5rem;
+
+    }
+    &__img{
+        width: 100%;
+        height: auto;
+    }
+    &__item {
+        display: block;
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: auto;
+        margin-bottom: 2.5rem;
+        padding: 0;
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            width: 48%;
+            margin-bottom: 1.25rem; 
+            &:nth-last-child(-n+5){
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (min-width: 1024px){
+            width: 32%;
+            &:nth-last-child(-n+3){
+                margin-bottom: 0;
+                
+            }
+
+        }
+        &:before {
+            display: block;
+            position: absolute;
+            width: 32px;
+            height: 28px;
+            top: 40%;
+            left: 50%;
+            margin: -14px 0 0 -10px;
+            background: url("../img/zoom-icon.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+            content: '';
+            opacity: 0;
+            z-index: 1;
+            -webkit-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+        }
+        &:hover:before {
+            top: 50%;
+            opacity: 1;
+        }
+        &:after {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 98%;
+            top: 0;
+            background: rgba(0, 0, 0, 0.5);
+            content: '';
+            opacity: 0;
+            -webkit-transition: all 0.3s linear;
+            -o-transition: all 0.3s linear;
+            transition: all 0.3s linear;
+        }
+        &:hover:after {
+            opacity: 1;
+        }
+        &:nth-last-child(-n+3){
+            display: none;
+            @media screen and (min-width: 1024px){
+                display: block;
+            }
+        }
+    }
+    
+}
