@@ -58,16 +58,12 @@ body {
 }
 
 .ordinary__people {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding: 20px 45px;
 }
 
 .header_block {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 25px;
 }
 
 .header_block__content {
@@ -75,15 +71,6 @@ body {
   justify-content: space-between;
   width: 100%;
   position: relative;
-}
-
-.header_block .line {
-  width: 9%;
-  max-width: 18px;
-  height: 2px;
-  background-color: #000;
-  display: block;
-  margin-top: 5px;
 }
 
 .header_block-title {
@@ -101,15 +88,16 @@ body {
   width: 100%;
   line-height: 1.5;
   font-weight: bold;
+  display: block;
+  position: relative;
+  padding-left: 30px;
 }
 
 .header_block-text::before {
   content: url("../img/line.png");
-}
-
-.header_block-text p {
-  margin-top: -15px;
-  margin-left: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .header_block-text span {
@@ -131,19 +119,23 @@ body {
   height: auto;
   padding: 10px;
   box-shadow: 0 5px 6px rgba(0, 0, 0, 0.2);
-  margin-top: 25px;
 }
 
 .review-block__page-counter {
   position: relative;
-  bottom: -10px;
   font-family: 'Acrom-ExtraBold';
   font-size: 0.1625rem;
+  line-height: 2;
+  z-index: 1;
 }
 
 .review-block__page-counter span:nth-child(1) {
   font-size: 0.2925rem;
   text-decoration: line-through;
+}
+
+.review-block__page-counter span:last-child {
+  margin-right: 0;
 }
 
 .review-block__page-counter span {
@@ -153,19 +145,19 @@ body {
 .review-block__col-1 {
   display: flex;
   flex-direction: column;
-  width: 22%;
+  width: 25%;
 }
 
 .review-block__col-1 img {
   width: 100%;
   height: auto;
+  margin-bottom: 7px;
 }
 
 .review-block__col-1 .review-block-title {
   font-family: 'Acrom-ExtraBold';
   font-size: 3.64px;
   text-transform: uppercase;
-  margin-top: 7px;
 }
 
 .review-block__col-2 {
@@ -177,9 +169,9 @@ body {
 
 .review-block__nav {
   position: absolute;
-  bottom: -1px;
-  width: 21px;
-  height: 9px;
+  bottom: 0;
+  width: 22px;
+  height: 10px;
   display: flex;
   justify-content: space-between;
   align-self: flex-end;
@@ -188,7 +180,9 @@ body {
 .review-block__nav .arr-prev,
 .review-block__nav .arr-next {
   width: 10px;
-  height: 9px;
+  height: 10px;
+  z-index: 10;
+  border: 0px;
   background: url("../img/arr-left.png") center #000 no-repeat;
   background-size: 4px 5px;
 }
@@ -206,19 +200,13 @@ body {
 
 .warning-block {
   padding: 20px 45px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.warning-block__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.warning-block__container .header_block {
+  margin-bottom: 25px;
 }
 
 .warning-block__list {
-  margin-top: 23px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,7 +230,10 @@ body {
   color: #3f4144;
   text-transform: none;
   width: 207px;
-  margin-top: 4px;
+}
+
+.warning-block__list li h4 {
+  margin-bottom: 7px;
 }
 
 .block-img {
@@ -259,6 +250,10 @@ body {
 
 .many-people .header_block {
   padding: 0 30px;
+}
+
+.many-people .header_block-title {
+  width: 70%;
 }
 
 .many-people-img__container {
@@ -434,13 +429,14 @@ body {
 
   .ordinary__people {
     padding: 0;
-    flex-direction: row;
+    display: flex;
     justify-content: space-between;
     align-items: unset;
   }
 
   .header_block {
-    width: 40%;
+    width: 35%;
+    margin-bottom: 0;
   }
 
   .header_block__content {
@@ -462,7 +458,6 @@ body {
   }
 
   .review-block__card {
-    margin-top: 0;
     padding: 15px;
   }
 
@@ -484,19 +479,19 @@ body {
   }
 
   .review-block__nav {
-    width: 40px;
-    height: 19px;
-    bottom: -8px;
+    width: 42px;
+    height: 20px;
+    bottom: 0;
   }
 
   .review-block__nav .arr-prev,
   .review-block__nav .arr-next {
-    width: 19px;
+    width: 20px;
     height: 18px;
   }
 
   .warning-block {
-    flex-direction: row;
+    display: flex;
     align-items: unset;
     justify-content: space-between;
     padding: 80px 0;
@@ -511,15 +506,8 @@ body {
   }
 
   .warning-block__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     order: 2;
     width: 50%;
-  }
-
-  .warning-block__container .header_block__content {
-    align-self: normal;
   }
 
   .warning-block__list {
@@ -536,12 +524,10 @@ body {
 
   .warning-block__list li p {
     width: 100%;
-    margin-top: 7px;
   }
 
   .block-img {
     display: block;
-    order: 1;
     width: 39%;
   }
 
@@ -685,6 +671,7 @@ body {
 
   .review-block__page-counter {
     font-size: 0.43812rem;
+    line-height: 1.7;
   }
 
   .review-block__page-counter span:nth-child(1) {
