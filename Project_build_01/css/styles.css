@@ -66,13 +66,6 @@ body {
   margin-bottom: 25px;
 }
 
-.header_block__content {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: relative;
-}
-
 .header_block-title {
   font-family: 'Acrom-ExtraBold';
   font-size: 0.75rem;
@@ -202,6 +195,18 @@ body {
   padding: 20px 45px;
 }
 
+.warning-block .header_block {
+  width: 100%;
+}
+
+.warning-block .header_block-title {
+  width: 100%;
+}
+
+.warning-block .header_block-text {
+  margin-bottom: 15px;
+}
+
 .warning-block__container .header_block {
   margin-bottom: 25px;
 }
@@ -210,6 +215,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-left: 14px;
 }
 
 .warning-block__list li {
@@ -242,9 +248,6 @@ body {
 }
 
 .many-people {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   padding-bottom: 20px;
 }
 
@@ -297,8 +300,9 @@ body {
 .many-people-text__container {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
   min-height: 115px;
+  padding-left: 30px;
 }
 
 .many-people-text__container .second,
@@ -322,7 +326,14 @@ body {
 .web-developer-career {
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.web-developer-career-col-1 {
+  width: 100%;
+}
+
+.web-developer-career-col-2 {
+  width: 100%;
 }
 
 .web-developer-career__point {
@@ -335,6 +346,7 @@ body {
 .web-developer-career .header_block {
   width: 80%;
   margin-bottom: 15px;
+  padding-left: 30px;
 }
 
 .web-developer-career .header_block__content {
@@ -347,12 +359,13 @@ body {
 }
 
 .web-developer-career .header_block-text {
-  width: 86%;
+  width: 100%;
 }
 
 .web-developer-career__img {
-  width: 70%;
+  width: 80%;
   margin-bottom: 10px;
+  padding-left: 60px;
 }
 
 .web-developer-career__img img {
@@ -360,7 +373,15 @@ body {
 }
 
 .warning-block__list.career {
-  width: 77%;
+  width: 80%;
+}
+
+.warning-block__list.career.first {
+  display: none;
+}
+
+.warning-block__list.career.second {
+  padding-left: 40px;
 }
 
 .warning-block__list.career p {
@@ -441,10 +462,6 @@ body {
     margin-bottom: 0;
   }
 
-  .header_block__content {
-    width: 70%;
-  }
-
   .header_block-title {
     font-size: 1.6825rem;
     align-self: unset;
@@ -492,19 +509,16 @@ body {
     height: 18px;
   }
 
+  .warning-block .header_block-text {
+    width: 80%;
+    margin-bottom: 36px;
+  }
+
   .warning-block {
     display: flex;
     align-items: unset;
     justify-content: space-between;
     padding: 80px 0;
-  }
-
-  .warning-block .header_block {
-    width: 100%;
-  }
-
-  .warning-block .header_block-title {
-    width: 100%;
   }
 
   .warning-block__container {
@@ -538,17 +552,26 @@ body {
     height: 100%;
   }
 
+  .many-people-row-1 {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .many-people-row-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   .many-people {
     flex-wrap: wrap;
     align-items: unset;
     justify-content: space-between;
     align-content: space-between;
-    height: 570px;
     padding-bottom: 80px;
   }
 
   .many-people .header_block {
-    order: 1;
     width: 45%;
   }
 
@@ -562,11 +585,10 @@ body {
     margin-bottom: 30px;
     width: 50%;
     height: 170px;
-    order: 3;
   }
 
   .many-people-img__container.second {
-    order: 2;
+    order: 1;
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     width: 45%;
@@ -575,7 +597,8 @@ body {
   }
 
   .many-people-img__container.third {
-    align-self: flex-end;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   .many-people__title {
@@ -589,12 +612,11 @@ body {
   }
 
   .many-people-text__container {
-    order: 4;
+    order: 2;
     width: 50%;
     flex-direction: unset;
     justify-content: space-between;
     margin: 0;
-    min-height: auto;
   }
 
   .many-people-text__block {
@@ -611,22 +633,29 @@ body {
     font-size: 0.49062rem;
   }
 
+  .web-developer-career-col-1 {
+    width: 45%;
+  }
+
+  .web-developer-career-col-2 {
+    width: 45%;
+  }
+
   .web-developer-career {
-    flex-wrap: wrap;
-    align-items: unset;
-    align-content: space-between;
-    justify-content: space-evenly;
-    height: 370px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .web-developer-career__point {
     display: block;
-    order: 2;
+    margin-bottom: 15px;
   }
 
   .web-developer-career .header_block {
-    order: 3;
-    width: 45%;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 40px;
   }
 
   .web-developer-career .header_block-title {
@@ -634,13 +663,22 @@ body {
   }
 
   .web-developer-career__img {
-    order: 1;
-    width: 45%;
     margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .warning-block__list.career.first {
+    display: block;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .warning-block__list.career.second {
+    display: none;
   }
 
   .warning-block__list.career {
-    order: 2;
     width: 45%;
     margin: 0;
   }
@@ -656,19 +694,15 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 768px) {
-  .warning-block .header_block-text {
-    width: 80%;
-  }
-
-  .many-people .header_block-text {
-    width: 80%;
-  }
-}
-
 @media screen and (min-width: 768px) and (min-width: 960px) {
   .many-people .header_block {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .many-people .header_block-text {
+    width: 80%;
   }
 }
 
@@ -714,10 +748,6 @@ body {
     font-size: 0.61313rem;
   }
 
-  .many-people {
-    height: 660px;
-  }
-
   .many-people-img__container {
     height: 210px;
   }
@@ -738,11 +768,7 @@ body {
     font-size: 0.61313rem;
   }
 
-  .web-developer-career {
-    height: 470px;
-  }
-
-  .web-developer-career .header_block {
+  .web-developer-career-col-2 {
     width: 50%;
   }
 
@@ -837,7 +863,7 @@ body {
   }
 
   .many-people-img__container.third {
-    height: 270px;
+    height: 240px;
   }
 
   .many-people__title {
@@ -850,10 +876,6 @@ body {
 
   .many-people__text {
     font-size: 0.65625rem;
-  }
-
-  .web-developer-career {
-    height: 500px;
   }
 
   .warning-block__list.career p {
