@@ -258,10 +258,10 @@ body {
 
 .many-people-img__container {
   width: 100%;
-  margin-top: 20px;
   background: url("../img/man2.jpg") center no-repeat;
   background-size: cover;
   min-height: 140px;
+  margin-bottom: 10px;
 }
 
 .many-people-img__container.second {
@@ -283,6 +283,7 @@ body {
   text-transform: uppercase;
   color: #fff;
   line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .many-people__title span {
@@ -297,7 +298,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin-top: 10px;
   min-height: 115px;
 }
 
@@ -310,12 +310,13 @@ body {
   font-family: 'Acrom-Bold';
   font-size: 0.5625rem;
   font-weight: bold;
-  margin: 10px 0 10px 0;
+  margin-bottom: 10px;
 }
 
 .many-people__text {
   font-family: 'Acrom-Regular';
   font-size: 0.5625rem;
+  margin-bottom: 30px;
 }
 
 .web-developer-career {
@@ -333,6 +334,7 @@ body {
 
 .web-developer-career .header_block {
   width: 80%;
+  margin-bottom: 15px;
 }
 
 .web-developer-career .header_block__content {
@@ -341,6 +343,7 @@ body {
 
 .web-developer-career .header_block-title {
   padding: 0;
+  margin-bottom: 10px;
 }
 
 .web-developer-career .header_block-text {
@@ -357,7 +360,6 @@ body {
 }
 
 .warning-block__list.career {
-  margin-top: 15px;
   width: 77%;
 }
 
@@ -541,7 +543,7 @@ body {
     align-items: unset;
     justify-content: space-between;
     align-content: space-between;
-    height: 530px;
+    height: 570px;
     padding-bottom: 80px;
   }
 
@@ -552,16 +554,12 @@ body {
 
   .many-people .header_block {
     padding: 0;
-    align-items: center;
-  }
-
-  .many-people .header_block-title {
-    width: 65%;
+    padding-left: 30px;
   }
 
   .many-people-img__container {
     background-size: cover;
-    margin-top: 0;
+    margin-bottom: 30px;
     width: 50%;
     height: 170px;
     order: 3;
@@ -573,6 +571,7 @@ body {
     transform: scale(1, 1);
     width: 45%;
     height: 230px;
+    margin: 0;
   }
 
   .many-people-img__container.third {
@@ -582,6 +581,7 @@ body {
   .many-people__title {
     font-size: 0.56063rem;
     width: 27%;
+    margin: 0;
   }
 
   .many-people__title.second {
@@ -615,7 +615,7 @@ body {
     flex-wrap: wrap;
     align-items: unset;
     align-content: space-between;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 370px;
   }
 
@@ -653,6 +653,22 @@ body {
 
   .warning-block__list.career li {
     list-style: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .warning-block .header_block-text {
+    width: 80%;
+  }
+
+  .many-people .header_block-text {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 960px) {
+  .many-people .header_block {
+    width: 50%;
   }
 }
 
@@ -699,7 +715,7 @@ body {
   }
 
   .many-people {
-    height: 621px;
+    height: 660px;
   }
 
   .many-people-img__container {
