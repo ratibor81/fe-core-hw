@@ -87,10 +87,14 @@ body {
 }
 
 .header_block-text::before {
-  content: url("../img/line.png");
+  content: '';
+  display: block;
+  width: 18px;
+  height: 3px;
+  background: #000;
   position: absolute;
   left: 0;
-  top: 0;
+  top: 8px;
 }
 
 .header_block-text span {
@@ -115,16 +119,15 @@ body {
 }
 
 .review-block__page-counter {
-  position: relative;
   font-family: 'Acrom-ExtraBold';
   font-size: 0.1625rem;
   line-height: 2;
-  z-index: 1;
 }
 
-.review-block__page-counter span:nth-child(1) {
+.review-block__page-counter .through {
   font-size: 0.2925rem;
   text-decoration: line-through;
+  transition: .3s ease-in-out;
 }
 
 .review-block__page-counter span:last-child {
@@ -133,6 +136,12 @@ body {
 
 .review-block__page-counter span {
   margin-right: 3px;
+  transition: .3s ease-in-out;
+}
+
+.review-block__card:nth-child(2),
+.review-block__card:nth-child(3) {
+  display: none;
 }
 
 .review-block__col-1 {
@@ -178,12 +187,16 @@ body {
   border: 0px;
   background: url("../img/arr-left.png") center #000 no-repeat;
   background-size: 4px 5px;
+  transition: .3s linear;
 }
 
 .review-block__nav .arr-prev:hover,
 .review-block__nav .arr-next:hover {
   opacity: 0.7;
   cursor: pointer;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: .3s linear;
 }
 
 .review-block__nav .arr-next {
@@ -310,6 +323,10 @@ body {
   align-self: flex-start;
 }
 
+.many-people-text__container:last-child {
+  margin-bottom: 0;
+}
+
 .many-people__subtitle {
   font-family: 'Acrom-Bold';
   font-size: 0.5625rem;
@@ -323,34 +340,10 @@ body {
   margin-bottom: 30px;
 }
 
-.web-developer-career {
-  display: flex;
-  flex-direction: column;
-}
-
-.web-developer-career-col-1 {
-  width: 100%;
-}
-
-.web-developer-career-col-2 {
-  width: 100%;
-}
-
-.web-developer-career__point {
-  width: 7.5px;
-  height: 7.5px;
-  background-color: #000;
-  display: none;
-}
-
 .web-developer-career .header_block {
-  width: 80%;
+  width: 90%;
   margin-bottom: 15px;
-  padding-left: 30px;
-}
-
-.web-developer-career .header_block__content {
-  width: 100%;
+  padding-left: 60px;
 }
 
 .web-developer-career .header_block-title {
@@ -373,15 +366,8 @@ body {
 }
 
 .warning-block__list.career {
-  width: 80%;
-}
-
-.warning-block__list.career.first {
-  display: none;
-}
-
-.warning-block__list.career.second {
-  padding-left: 40px;
+  width: 90%;
+  padding-left: 60px;
 }
 
 .warning-block__list.career p {
@@ -406,7 +392,7 @@ body {
     font-size: 0.24375rem;
   }
 
-  .review-block__page-counter span:nth-child(1) {
+  .review-block__page-counter .through {
     font-size: 0.44125rem;
   }
 
@@ -483,9 +469,10 @@ body {
   .review-block__page-counter {
     font-size: 0.35063rem;
     margin-top: 0;
+    height: 20px;
   }
 
-  .review-block__page-counter span:nth-child(1) {
+  .review-block__page-counter .through {
     font-size: 0.63062rem;
   }
 
@@ -555,12 +542,13 @@ body {
   .many-people-row-1 {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   .many-people-row-2 {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
+    height: 300px;
   }
 
   .many-people {
@@ -582,8 +570,8 @@ body {
 
   .many-people-img__container {
     background-size: cover;
-    margin-bottom: 30px;
-    width: 50%;
+    margin-bottom: 0;
+    width: 45%;
     height: 170px;
   }
 
@@ -592,13 +580,14 @@ body {
     -webkit-transform: scale(1, 1);
     transform: scale(1, 1);
     width: 45%;
-    height: 230px;
+    height: 240px;
     margin: 0;
   }
 
   .many-people-img__container.third {
-    width: 100%;
+    width: 50%;
     margin-bottom: 0;
+    order: 4;
   }
 
   .many-people__title {
@@ -617,11 +606,14 @@ body {
     flex-direction: unset;
     justify-content: space-between;
     margin: 0;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    height: 40%;
   }
 
   .many-people-text__block {
-    width: 60%;
-    line-height: 1.6;
+    width: 61%;
+    line-height: 1.5;
   }
 
   .many-people__subtitle {
@@ -633,60 +625,55 @@ body {
     font-size: 0.49062rem;
   }
 
-  .web-developer-career-col-1 {
-    width: 45%;
-  }
-
-  .web-developer-career-col-2 {
-    width: 45%;
-  }
-
   .web-developer-career {
     display: flex;
-    flex-direction: row;
+    flex-flow: column wrap;
     justify-content: space-between;
-  }
-
-  .web-developer-career__point {
-    display: block;
-    margin-bottom: 15px;
+    align-content: space-between;
+    height: 360px;
   }
 
   .web-developer-career .header_block {
-    width: 100%;
+    order: 3;
+    width: 45%;
     padding-left: 0;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .web-developer-career .header_block-title {
     width: 100%;
   }
 
+  .web-developer-career .header_block-text {
+    width: 80%;
+  }
+
   .web-developer-career__img {
     margin-bottom: 0;
-    width: 100%;
+    width: 45%;
     padding: 0;
   }
 
-  .warning-block__list.career.first {
-    display: block;
-    width: 100%;
-    padding-left: 0;
-  }
-
-  .warning-block__list.career.second {
-    display: none;
-  }
-
   .warning-block__list.career {
+    order: 2;
     width: 45%;
     margin: 0;
+    padding: 0;
+  }
+
+  .warning-block__list.career:before {
+    content: '';
+    display: block;
+    width: 7.5px;
+    height: 7.5px;
+    background: #000;
+    margin-bottom: 15px;
   }
 
   .warning-block__list.career p {
     margin-left: 0;
     font-size: 0.49062rem;
-    width: 70%;
+    width: 85%;
   }
 
   .warning-block__list.career li {
@@ -724,7 +711,7 @@ body {
     line-height: 1.7;
   }
 
-  .review-block__page-counter span:nth-child(1) {
+  .review-block__page-counter .through {
     font-size: 0.78875rem;
   }
 
@@ -748,6 +735,10 @@ body {
     font-size: 0.61313rem;
   }
 
+  .many-people-row-2 {
+    height: 330px;
+  }
+
   .many-people-img__container {
     height: 210px;
   }
@@ -757,6 +748,7 @@ body {
   }
 
   .many-people__title {
+    width: 30%;
     font-size: 0.70125rem;
   }
 
@@ -768,8 +760,12 @@ body {
     font-size: 0.61313rem;
   }
 
-  .web-developer-career-col-2 {
-    width: 50%;
+  .web-developer-career {
+    height: 420px;
+  }
+
+  .web-developer-career .header_block {
+    width: 47%;
   }
 
   .warning-block__list.career p {
@@ -815,8 +811,16 @@ body {
     font-size: 0.54688rem;
   }
 
+  .many-people .header_block-title {
+    width: 60%;
+  }
+
   .many-people__title {
     font-size: 0.625rem;
+  }
+
+  .many-people__title.second {
+    width: 30%;
   }
 
   .many-people__subtitle {
@@ -845,7 +849,7 @@ body {
     font-size: 0.46875rem;
   }
 
-  .review-block__page-counter span:nth-child(1) {
+  .review-block__page-counter .through {
     font-size: 0.84375rem;
   }
 
