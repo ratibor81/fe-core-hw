@@ -102,6 +102,11 @@ body {
   color: #fff;
 }
 
+.slider {
+  width: 51%;
+  overflow: hidden;
+}
+
 .review-block {
   display: flex;
   flex-direction: column;
@@ -187,6 +192,7 @@ body {
   border: 0px;
   background: url("../img/arr-left.png") center #000 no-repeat;
   background-size: 4px 5px;
+  outline: none;
   transition: .3s linear;
 }
 
@@ -462,10 +468,6 @@ body {
     width: 60%;
   }
 
-  .review-block__card {
-    padding: 15px;
-  }
-
   .review-block__page-counter {
     font-size: 0.35063rem;
     margin-top: 0;
@@ -548,14 +550,10 @@ body {
   .many-people-row-2 {
     display: flex;
     flex-flow: column wrap;
-    height: 300px;
+    height: 270px;
   }
 
   .many-people {
-    flex-wrap: wrap;
-    align-items: unset;
-    justify-content: space-between;
-    align-content: space-between;
     padding-bottom: 80px;
   }
 
@@ -572,7 +570,7 @@ body {
     background-size: cover;
     margin-bottom: 0;
     width: 45%;
-    height: 170px;
+    min-height: 170px;
   }
 
   .many-people-img__container.second {
@@ -597,7 +595,7 @@ body {
   }
 
   .many-people__title.second {
-    width: 35%;
+    width: 36%;
   }
 
   .many-people-text__container {
@@ -607,8 +605,7 @@ body {
     justify-content: space-between;
     margin: 0;
     padding-left: 15px;
-    margin-bottom: 15px;
-    height: 40%;
+    margin-bottom: 30px;
   }
 
   .many-people-text__block {
@@ -623,6 +620,7 @@ body {
 
   .many-people__text {
     font-size: 0.49062rem;
+    margin-bottom: 0;
   }
 
   .web-developer-career {
@@ -695,7 +693,7 @@ body {
 
 @media screen and (min-width: 960px) {
   .wrapper {
-    padding: 0 80px;
+    padding: 0 50px;
   }
 
   .header_block-title {
@@ -740,7 +738,7 @@ body {
   }
 
   .many-people-img__container {
-    height: 210px;
+    min-height: 210px;
   }
 
   .many-people-img__container.second {
@@ -752,6 +750,10 @@ body {
     font-size: 0.70125rem;
   }
 
+  .many-people__title.second {
+    width: 37%;
+  }
+
   .many-people__subtitle {
     font-size: 0.70125rem;
   }
@@ -761,7 +763,7 @@ body {
   }
 
   .web-developer-career {
-    height: 420px;
+    height: 430px;
   }
 
   .web-developer-career .header_block {
@@ -821,6 +823,10 @@ body {
 
   .many-people__title.second {
     width: 30%;
+  }
+
+  .many-people__title.second {
+    width: 35%;
   }
 
   .many-people__subtitle {
